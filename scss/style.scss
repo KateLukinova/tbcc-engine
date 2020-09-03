@@ -685,6 +685,71 @@ h2.caption {
     }
 }
 
+.road-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 90%;
+    max-width: 1160px;
+    margin: auto;
+
+    .events {
+        width: 100%;
+        display: flex;
+        align-items: flex-end;
+        .events__item {
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            width: 18%;
+            margin-right: 20px;
+            margin-top: 20px;
+            img {
+                padding-top: 16px;
+            }
+            p {
+                font-size: 12px;
+                padding-left: 8px;
+            }
+            &.m-otr {
+                margin-left: -7.5%;
+            }
+        }
+        &.rotate {
+            align-items: flex-start;
+            justify-content: space-between;
+            .events__item {
+                align-items: flex-end;
+                margin-top: 0;
+                margin-bottom: 20px;
+                width: 20%;
+                img {
+                    transform: rotate(180deg);
+                }
+            }
+        }
+    }
+}
+
+.year {
+    font-family: 'Gilroy-Bold', sans-serif;
+    font-size: 24px;
+    line-height: 1.5;
+    letter-spacing: 0.15px;
+    color: #000000;
+    margin: 12px 0;
+    &.year-mobile {
+        display: none;
+    }
+}
+
+.divider {
+    background: linear-gradient(244.89deg, #00C6FF 0.13%, #0072FF 89.01%);
+    width: 100%;
+    height: 2px;
+}
+
 footer {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1481,6 +1546,43 @@ ul li {
         font-size: 16px;
     }
 
+    .road-box .events {
+        flex-direction: column;
+        margin-bottom: 20px;
+        .events__item {
+            width: 100%;
+            max-width: 460px;
+            position: relative;
+            padding-left: 16px;
+            img {
+                display: none;
+            }
+            &:before {
+                position: absolute;
+                top: 8px;
+                left: 0;
+                content: '';
+                width: 5px;
+                height: 5px;
+                background-color: #0072ff;
+                border-radius: 5px;
+                box-sizing: border-box;
+            }
+        }
+    }
+
+    .year.year-mobile {
+        display: flex;
+    }
+
+    .year.year-desktop {
+        display: none;
+    }
+
+    .road-box .events.rotate .events__item {
+        width: 100%;
+        max-width: 460px;
+    }
 }
 
 @media (max-width: 990px) {
