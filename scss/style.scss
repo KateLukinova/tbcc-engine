@@ -1,4 +1,5 @@
 
+
 @font-face {
     font-family: 'Gilroy';
     src: local('Gilroy Light'),
@@ -268,6 +269,8 @@ a.m-btn, button.m-btn {
             content: '';
             position: absolute;
             left: 50%;
+            -webkit-transform: translateX(-50%);
+            -ms-transform: translateX(-50%);
             transform: translateX(-50%);
             bottom: -20px;
             color: black;
@@ -313,6 +316,7 @@ a.m-btn, button.m-btn {
 
 .select2-container--default .select2-selection--single {
     background-color: white;
+    -webkit-box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.08);
     box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.08);
     border-radius: 5px;
     padding: 3px;
@@ -661,6 +665,10 @@ h2.caption {
     text-align: center;
     letter-spacing: 0.15px;
     color: #000000;
+    max-width: 768px;
+    &.h2-min {
+        font-size: 36px;
+    }
 }
 
 .center-block .products-img {
@@ -686,9 +694,18 @@ h2.caption {
 }
 
 .road-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
     justify-content: flex-start;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
     align-items: flex-start;
     width: 90%;
     max-width: 1160px;
@@ -696,11 +713,21 @@ h2.caption {
 
     .events {
         width: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-align: end;
+        -ms-flex-align: end;
         align-items: flex-end;
         .events__item {
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
+            -webkit-box-pack: start;
+            -ms-flex-pack: start;
             justify-content: flex-start;
+            -webkit-box-align: start;
+            -ms-flex-align: start;
             align-items: flex-start;
             width: 18%;
             margin-right: 20px;
@@ -717,14 +744,22 @@ h2.caption {
             }
         }
         &.rotate {
+            -webkit-box-align: start;
+            -ms-flex-align: start;
             align-items: flex-start;
+            -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
             justify-content: space-between;
             .events__item {
+                -webkit-box-align: end;
+                -ms-flex-align: end;
                 align-items: flex-end;
                 margin-top: 0;
                 margin-bottom: 20px;
                 width: 20%;
                 img {
+                    -webkit-transform: rotate(180deg);
+                    -ms-transform: rotate(180deg);
                     transform: rotate(180deg);
                 }
             }
@@ -745,6 +780,7 @@ h2.caption {
 }
 
 .divider {
+    background: -o-linear-gradient(205.11deg, #00C6FF 0.13%, #0072FF 89.01%);
     background: linear-gradient(244.89deg, #00C6FF 0.13%, #0072FF 89.01%);
     width: 100%;
     height: 2px;
@@ -1088,8 +1124,14 @@ ul li {
 }
 
 .button-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     .m-btn {
         margin: 25px;
@@ -1116,18 +1158,25 @@ ul li {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
     align-items: flex-start;
     margin: auto;
     margin-top: 80px;
-    max-width: 800px;
     &.easy {
         max-width: 1140px;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
         justify-content: space-between;
         h4 {
             margin-top: 32px;
             margin-bottom: 12px;
         }
     }
+}
+
+.mt-otr {
+    margin-top: -100px;
 }
 
 .values-item {
@@ -1141,12 +1190,12 @@ ul li {
     -webkit-box-align: start;
     -ms-flex-align: start;
     align-items: flex-start;
-    width: 31%;
-    min-width: 350px;
-    padding-right: 35px;
+    width: 28%;
+    max-width: 370px;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     margin-bottom: 64px;
+    padding: 0 15px;
     p {
         font-size: 16px;
     }
@@ -1301,14 +1350,13 @@ ul li {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    width: 100%;
+    width: 90%;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    margin-bottom: 150px;
-    margin-top: 60px;
-
+    max-width: 900px;
+    margin: auto;
     .team__item {
-        width: 15%;
+        width: 22%;
         min-width: 15%;
         margin-bottom: 16px;
         margin-right: 10px;
@@ -1371,10 +1419,36 @@ ul li {
     color: #000000;
 }
 
+.contacts {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
 .contact-form {
     margin: 40px 0;
     width: 100%;
-    max-width: 376px;
+    max-width: 572px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
     .form-group {
         width: 100%;
         label {
@@ -1502,8 +1576,14 @@ ul li {
 .section-800 {
     height: auto;
     min-height: 800px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     .center-block {
         max-width: 572px;
@@ -1547,6 +1627,9 @@ ul li {
     }
 
     .road-box .events {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
         margin-bottom: 20px;
         .events__item {
@@ -1566,12 +1649,15 @@ ul li {
                 height: 5px;
                 background-color: #0072ff;
                 border-radius: 5px;
+                -webkit-box-sizing: border-box;
                 box-sizing: border-box;
             }
         }
     }
 
     .year.year-mobile {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
     }
 
@@ -1848,6 +1934,11 @@ ul li {
         -ms-flex-direction: column;
         flex-direction: column;
     }
+
+    .main-products p {
+        max-width: 540px;
+        width: 90%;
+    }
 }
 
 @media (max-width: 768px) {
@@ -2070,6 +2161,7 @@ ul li {
 
     .values {
         padding: 40px 0;
+        width: 90%;
     }
 
     .values-box {
@@ -2125,7 +2217,7 @@ ul li {
     }
 
     .bg-img {
-        background-size: auto 80vh;
+        background-size: cover;
     }
 
     .main-products {
