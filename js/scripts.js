@@ -70,6 +70,23 @@ $( document ).ready(function() {
             rulesItemThree: 'We provide the most favorable conditions for your investment. The tokens that you put on the deposit will be evaluated according to the 1: 1 ',
             assetsCaptionTwo: 'Discover our Tokens',
             assetsPBlockTwo: 'Enter our wallet website and learn more about them',
+            aboutCaptionOne: 'About the company',
+            aboutH4One: 'Location',
+            aboutH4Two: 'Main goal',
+            aboutH4Three: 'Values',
+            aboutPBlockOne: ' We are international company with head office in Seychelles.',
+            aboutPBlockTwo: 'Creating a smart and easy-to-use service with understandable interface.',
+            aboutPBlockThree: 'Think clearly, be resourceful, stay determined, dream big & decisive.',
+            aboutCaptionTwo: 'Meet our team',
+            aboutPBlockFour: 'Our team consists of professionals in different spheres with higher education and outstanding background that help us to make the best service for you.',
+            contactsCaptionOne: 'Contact Us',
+            contactsPBlockOne: 'Fill in the form if you want to contact us',
+            contactFormFName: 'First Name',
+            contactFormLName: 'Last Name',
+            contactFormEmail: 'Email',
+            contactFormTopic: 'Topic',
+            contactFormMessage: 'Message',
+            contactsButton: 'Send'
         },
         RU: {
             menuItemOne: 'Путевая карта',
@@ -121,7 +138,24 @@ $( document ).ready(function() {
             rulesItemTwo: 'Отдайте один из Ваших токенов на депозит прямо сейчас и начните зарабатывать проценты в реальном времени!',
             rulesItemThree: 'Мы предоставляем максимально выгодные условия для Ваших вложений. Токены, которые Вы положите на депозит будут оцениваться по системе 1:1',
             assetsCaptionTwo: 'Откройте для себя наши токены',
-            assetsPBlockTwo: 'Перейдите на сайт нашего кошелька и узнайте о них больше'
+            assetsPBlockTwo: 'Перейдите на сайт нашего кошелька и узнайте о них больше',
+            aboutCaptionOne: 'О компании',
+            aboutH4One: 'Местоположение',
+            aboutH4Two: 'Основная цель',
+            aboutH4Three: 'Ценности',
+            aboutPBlockOne: 'Мы - международная компания, с головным офисом на Сейшельских островах.',
+            aboutPBlockTwo: 'Создание умного и простого в использовании сервиса с понятным интерфейсом.',
+            aboutPBlockThree: 'Мыслить ясно, проявлять изобретательность, сохранять решимость, мечтать масштабно и решительно',
+            aboutCaptionTwo: 'Познакомьтесь с нашей командой',
+            aboutPBlockFour: 'Наша команда состоит из профессионалов в различных сферах, с высшим образованием и выдающимся опытом, которые помогают нам создавать лучший сервис для Вас',
+            contactsCaptionOne: 'Свяжитесь с нами',
+            contactsPBlockOne: 'Заполните форму ниже, если у вас есть вопросы и предложения',
+            contactFormFName: 'Имя',
+            contactFormLName: 'Фамилия',
+            contactFormEmail: 'Электронный адрес',
+            contactFormTopic: 'Тема',
+            contactFormMessage: 'Ваше сообщение',
+            contactsButton: 'Отправить'
         }
     }
 
@@ -198,4 +232,21 @@ function setLanguage(dictionary, language)
     $('#rulesItemThree').text(dictionary[language].rulesItemThree);
     $('#assetsCaptionTwo').text(dictionary[language].assetsCaptionTwo);
     $('#assetsPBlockTwo').text(dictionary[language].assetsPBlockTwo);
+    $('#aboutCaptionOne').text(dictionary[language].aboutCaptionOne);
+    $('#aboutH4One').text(dictionary[language].aboutH4One);
+    $('#aboutH4Two').text(dictionary[language].aboutH4Two);
+    $('#aboutH4Three').text(dictionary[language].aboutH4Three);
+    $('#aboutPBlockOne').text(dictionary[language].aboutPBlockOne);
+    $('#aboutPBlockTwo').text(dictionary[language].aboutPBlockTwo);
+    $('#aboutPBlockThree').text(dictionary[language].aboutPBlockThree);
+    $('#aboutCaptionTwo').text(dictionary[language].aboutCaptionTwo);
+    $('#aboutPBlockFour').text(dictionary[language].aboutPBlockFour);
+    $('#contactsCaptionOne').text(dictionary[language].contactsCaptionOne);
+    $('#contactsPBlockOne').text(dictionary[language].contactsPBlockOne);
+    $('#contact-form-f-name').attr('placeholder', dictionary[language].contactFormFName);
+    $('#contact-form-l-name').attr('placeholder', dictionary[language].contactFormLName);
+    $('#contact-form-topic').attr('placeholder', dictionary[language].contactFormTopic);
+    $('#contact-form-message').text(dictionary[language].contactFormMessage);
+    $('#contact-form-email').attr('placeholder', dictionary[language].contactFormEmail);
+    $('#contacts-button').text(dictionary[language].contactsButton);
 }
