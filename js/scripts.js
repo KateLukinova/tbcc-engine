@@ -21,8 +21,8 @@ $( document ).ready(function() {
     var dictionary = {
         EN: {
             menuItemOne: 'Road map',
-            menuItemTwo: 'Assets',
-            menuItemThree: 'Token',
+            menuItemTwo: 'Token',
+            menuItemThree: 'Assets',
             menuItemFour: 'About',
             mainCaptionOne: 'The new mechanism to gain tokens',
             mainPBlockOne: 'The Engine is a money market protocol algorithm on Binance Smart-Chain that allows you to earn percents on a deposit or take digital assets under the pledge of cryptocurrency issued under the Binance Chain protocol.',
@@ -57,12 +57,24 @@ $( document ).ready(function() {
             roadItemTen: 'Q1. 2021 Development and deployment of a token on Binance Chain to work with Binance Dex.',
             roadItemEleven: 'Q2. 2021 —  Increasing the number of partners from Latin America.',
             roadItemTwelve: ' Q3. 2021 —  Increasing the number of partners from Africa.',
-            roadItemThirteen: 'Q3 — Q4. 2021 — Optimization and expansion of the marketplace platform.'
+            roadItemThirteen: 'Q3 — Q4. 2021 — Optimization and expansion of the marketplace platform.',
+            tokenCaptionOne: 'TBCC token',
+            tokenPBlockOne: 'With the help of TBCС (TBC) you can pay for products in partner stores, trade on DEX, use it as collateral on lending platforms, as well as in loyalty programs and for voting. TBCC (TBC) works with BEP 2 protocol on Binance DEX platform.',
+            assetsCaptionOne: 'Meet our tokens',
+            assetsPBlockOne: 'What are assets? Assets are several types of tokens (VTBC, TBCC (TBC), BNB, BUSD) that were issued on the Binance Dex platform and can be used as a deposit to receive interest on it. Tokens are pegged to the value of the underlying asset, 1 to 1. Thanks to the new service, you will be able to track changes in your wallet balance in real time.',
+            rulesCaptionOne: 'Forwarding interest',
+            rulesCaptionTwo: 'Reduced volatility',
+            rulesCaptionThree: 'Profitable terms',
+            rulesItemOne: 'The interest you earned from the deposit can be redirected to any wallet address at a convenient time for you.',
+            rulesItemTwo: 'Give one of your tokens for deposit now and start earning interest in real time!',
+            rulesItemThree: 'We provide the most favorable conditions for your investment. The tokens that you put on the deposit will be evaluated according to the 1: 1 ',
+            assetsCaptionTwo: 'Discover our Tokens',
+            assetsPBlockTwo: 'Enter our wallet website and learn more about them',
         },
         RU: {
             menuItemOne: 'Путевая карта',
-            menuItemTwo: 'Активы',
-            menuItemThree: 'Токен',
+            menuItemTwo: 'Токен',
+            menuItemThree: 'Активы',
             menuItemFour: 'О нас',
             mainCaptionOne: 'Новый механизм для заработка токенов',
             mainPBlockOne: 'Engine - это алгоритм протокола денежного рынка на Binance Smart-Chain, который позволяет Вам зарабатывать проценты на депозите или брать цифровые активы под залог криптовалюты, выпущенной на протоколах Binance Chain.',
@@ -80,7 +92,6 @@ $( document ).ready(function() {
             advItemFour: 'Активы, которые Вы получаете, не могут находиться под контролем государственных регулирующих органов',
             advItemFive: 'Мы даем Вам возможность совершать транзакции с низкими комиссиями для максимального удобства',
             mainCaptionFour: 'Подпишись на наш Telegram канал',
-            rulesItemOne: 'Децентрализованный',
             footerItemOne: 'Политика возврата',
             footerItemTwo: 'Условия использования',
             footerItemThree: 'Политика конфиденциальности',
@@ -98,8 +109,19 @@ $( document ).ready(function() {
             roadItemTen: 'Q1. 2021 Разработка и развертывание токена на Binance Chain для работы с Binance Dex.',
             roadItemEleven: 'Q2. 2021 —  Увеличение количества партнеров из Латинской Америки',
             roadItemTwelve: ' Q3. 2021 —  Увеличение количества партнеров из Африки',
-            roadItemThirteen: 'Q3 — Q4. 2021 — Оптимизация и расширение маркетплейса платформы'
-
+            roadItemThirteen: 'Q3 — Q4. 2021 — Оптимизация и расширение маркетплейса платформы',
+            tokenCaptionOne: 'TBCC token',
+            tokenPBlockOne: 'С помощью TBCС (TBC) Вы можете оплачивать товары в магазинах-партнерах, торговать на бирже DEX, использовать его в качестве залога на платформах кредитования, а также в программах лояльности и для голосования. TBCC (TBC) работает с протоколом BEP 2 на платформе Binance DEX.',
+            assetsCaptionOne: 'Встречайте наши токены',
+            assetsPBlockOne: 'Что такое активы? Активы - это несколько видов токенов (VTBC, TBCC (TBC), BNB, BUSD), которые были выпущены на платформе Binance Dex и могут использоваться в качестве депозита для получения процентов по нему. Токены привязаны к стоимости базового актива 1 к 1. Благодаря новому сервису, Вы сможете отслеживать изменения на балансе Вашего кошелька в режиме реального времени.',
+            rulesCaptionOne: 'Переадресация процентов',
+            rulesCaptionTwo: 'Зарабатывайте проценты',
+            rulesCaptionThree: 'Выгодные условия',
+            rulesItemOne: 'Проценты, которые вы заработали со вклада, могут быть перенаправлены на любой адрес кошелька в удобное для вас время',
+            rulesItemTwo: 'Отдайте один из Ваших токенов на депозит прямо сейчас и начните зарабатывать проценты в реальном времени!',
+            rulesItemThree: 'Мы предоставляем максимально выгодные условия для Ваших вложений. Токены, которые Вы положите на депозит будут оцениваться по системе 1:1',
+            assetsCaptionTwo: 'Откройте для себя наши токены',
+            assetsPBlockTwo: 'Перейдите на сайт нашего кошелька и узнайте о них больше'
         }
     }
 
@@ -164,5 +186,16 @@ function setLanguage(dictionary, language)
     $('#roadItemEleven').text(dictionary[language].roadItemEleven);
     $('#roadItemTwelve').text(dictionary[language].roadItemTwelve);
     $('#roadItemThirteen').text(dictionary[language].roadItemThirteen);
-
+    $('#tokenCaptionOne').text(dictionary[language].tokenCaptionOne);
+    $('#tokenPBlockOne').text(dictionary[language].tokenPBlockOne);
+    $('#assetsCaptionOne').text(dictionary[language].assetsCaptionOne);
+    $('#assetsPBlockOne').text(dictionary[language].assetsPBlockOne);
+    $('#rulesCaptionOne').text(dictionary[language].rulesCaptionOne);
+    $('#rulesCaptionTwo').text(dictionary[language].rulesCaptionTwo);
+    $('#rulesCaptionThree').text(dictionary[language].rulesCaptionThree);
+    $('#rulesItemOne').text(dictionary[language].rulesItemOne);
+    $('#rulesItemTwo').text(dictionary[language].rulesItemTwo);
+    $('#rulesItemThree').text(dictionary[language].rulesItemThree);
+    $('#assetsCaptionTwo').text(dictionary[language].assetsCaptionTwo);
+    $('#assetsPBlockTwo').text(dictionary[language].assetsPBlockTwo);
 }
